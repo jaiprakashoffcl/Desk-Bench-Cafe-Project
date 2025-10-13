@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Menu Data (Local JSON Array) ---
+
     const menuItems = [
         { id: 1, name: "Espresso", price: "₹180", description: "Rich and aromatic single shot of pure coffee.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjyHlkViXf1t9FlpAnmlozT9DZSvPbFi-Lg&s", category: "coffee" },
         { id: 2, name: "Cappuccino", price: "₹220", description: "Espresso with steamed milk foam, a classic favorite.", image: "https://guentercoffee.com/cdn/shop/articles/anleitung-cappuccino-blogheader.jpg?v=1758119315&width=1200", category: "coffee" },
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterButtons = document.querySelectorAll('.btn-filter');
     const specialsContainer = document.getElementById('specials-container');
 
-    // --- Dynamic Menu Rendering ---
+
     function displayMenuItems(items) {
         menuGrid.innerHTML = items.map(item => `
             <div class="menu-card">
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    // --- Menu Filtering ---
+
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             document.querySelector('.btn-filter.active').classList.remove('active');
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Dynamic Specials ---
+
     function displaySpecials() {
         const shuffled = [...menuItems].sort(() => 0.5 - Math.random());
         const specials = shuffled.slice(0, 3); // Get 3 random items
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    // --- Form Validation ---
+
     const bookingForm = document.getElementById('booking-form');
     const formMessage = document.getElementById('form-message');
 
@@ -78,20 +78,20 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => formMessage.textContent = '', 5000);
     });
     
-    // --- Header Scroll Effect ---
+
     const header = document.querySelector('.header');
     window.addEventListener('scroll', () => {
         header.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // --- Responsive Hamburger Menu ---
+
     const hamburger = document.querySelector('.hamburger');
     const navbar = document.querySelector('.navbar');
     hamburger.addEventListener('click', () => {
         navbar.classList.toggle('active');
     });
 
-    // --- Dark/Light Mode ---
+
     const themeToggle = document.querySelector('.theme-toggle');
     const currentTheme = localStorage.getItem('theme');
 
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', theme);
     });
     
-    // --- Scroll Reveal Animation ---
+
     const revealElements = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
