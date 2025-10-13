@@ -1,4 +1,3 @@
-/* --- Global Styles & Variables --- */
 :root {
     --primary-color: #6F4E37; /* Coffee Brown */
     --secondary-color: #A0522D; /* Sienna */
@@ -363,7 +362,7 @@ h2 { font-size: 2.5rem; }
     font-weight: 500;
 }
 
-/* --- Footer --- */
+/* --- Footer Section --- */
 .footer {
     background-color: var(--surface-color);
     padding-top: 60px;

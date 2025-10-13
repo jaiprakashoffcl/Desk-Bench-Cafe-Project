@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.toggle('active');
     });
 
-    // --- Dark/Light Mode Toggle ---
+    // --- Dark/Light Mode ---
     const themeToggle = document.querySelector('.theme-toggle');
     const currentTheme = localStorage.getItem('theme');
 
