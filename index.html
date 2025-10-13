@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desk-Bench Café – Where Comfort Meets Coffee</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Desk-Bench Café</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#specials">Specials</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-right">
+            <div class="theme-toggle">
+                <i class='bx bxs-sun'></i>
+                <i class='bx bxs-moon'></i>
+            </div>
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Where Comfort Meets Coffee.</h1>
+            <p class="fade-in">Experience the perfect blend of cozy ambiance, rich aromas, and delightful flavors.</p>
+            <div class="hero-buttons fade-in">
+                <a href="#menu" class="btn">Explore Menu</a>
+                <a href="#order" class="btn btn-secondary">Order Online</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container reveal">
+            <div class="about-text">
+                <h2>We Brew Happiness</h2>
+                <p>At Desk-Bench Café, we believe a cup of coffee is more than just a drink; it's a moment of peace. We brew happiness for every customer, focusing on exceptional satisfaction and quality service—whether you're relaxing in our cozy space or ordering from the comfort of your home.</p>
+            </div>
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop" alt="Cozy cafe interior">
+                <img src="assets/Barista making coffee.jpg" alt="Barista making coffee">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1937&auto=format&fit=crop" alt="Latte art">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container reveal">
+            <h2>Our Menu</h2>
+            <div class="filter-buttons">
+                <button class="btn-filter active" data-category="all">All</button>
+                <button class="btn-filter" data-category="coffee">Coffee</button>
+                <button class="btn-filter" data-category="snacks">Snacks</button>
+                <button class="btn-filter" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                </div>
+        </div>
+    </section>
+    
+    <section id="specials" class="specials">
+        <div class="container reveal">
+            <h2>Today's Specials</h2>
+            <div class="specials-container" id="specials-container">
+                </div>
+        </div>
+    </section>
+
+    <section id="order" class="order">
+        <div class="container reveal">
+            <h2>Order From Your Favorite App</h2>
+            <p>Get your favorite coffee and snacks delivered right to your doorstep.</p>
+            <div class="order-buttons">
+                <a href="#" class="order-link swiggy">
+                    <img src="https://cdn.brandfetch.io/ideeTxiKQK/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1668517464348" alt="Swiggy Logo">
+                </a>
+                <a href="#" class="order-link zomato">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/1200px-Zomato_logo.png" alt="Zomato Logo">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container reveal">
+            <h2>Book a Table</h2>
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="guests" name="guests" min="1" max="10" placeholder="No. of Guests" required>
+                </div>
+                <button type="submit" class="btn">Book Now</button>
+            </form>
+            <p id="form-message"></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Desk-Bench Café</h3>
+                    <p>123 Coffee Lane,<br>Trichy, Tamil Nadu 620012</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>Email: contact@deskbench.cafe</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Desk-Bench Café. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
