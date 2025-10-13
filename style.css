@@ -1,16 +1,16 @@
 :root {
-    --primary-color: #6F4E37; /* Coffee Brown */
-    --secondary-color: #A0522D; /* Sienna */
-    --background-color: #F5F5DC; /* Beige */
+    --primary-color: #6F4E37; 
+    --secondary-color: #A0522D; 
+    --background-color: #F5F5DC; 
     --surface-color: #FFFFFF;
     --text-color: #3D3D3D;
-    --accent-color: #D2B48C; /* Tan */
+    --accent-color: #D2B48C; 
     --font-family: 'Poppins', sans-serif;
 }
 
 [data-theme="dark"] {
-    --primary-color: #D2B48C; /* Tan */
-    --secondary-color: #A0522D; /* Sienna */
+    --primary-color: #D2B48C; 
+    --secondary-color: #A0522D; 
     --background-color: #2C2C2C;
     --surface-color: #3D3D3D;
     --text-color: #EAEAEA;
@@ -76,7 +76,7 @@ h2 { font-size: 2.5rem; }
     border: 2px solid var(--primary-color);
 }
 
-/* --- Animations --- */
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -105,7 +105,7 @@ h2 { font-size: 2.5rem; }
     }
 }
 
-/* --- Header --- */
+
 .header {
     position: fixed;
     top: 0;
@@ -180,7 +180,7 @@ h2 { font-size: 2.5rem; }
     cursor: pointer;
 }
 
-/* --- Hero Section --- */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -215,7 +215,7 @@ h2 { font-size: 2.5rem; }
     color: var(--primary-color);
 }
 
-/* --- About Section --- */
+
 #about .container {
     display: flex;
     align-items: center;
@@ -246,7 +246,7 @@ h2 { font-size: 2.5rem; }
     grid-column: span 2;
 }
 
-/* --- Menu & Specials Section --- */
+
 .filter-buttons {
     text-align: center;
     margin-bottom: 40px;
@@ -302,7 +302,7 @@ h2 { font-size: 2.5rem; }
     line-height: 1.5;
 }
 
-/* --- Order Section --- */
+
 #order {
     background-color: var(--surface-color);
 }
@@ -331,7 +331,7 @@ h2 { font-size: 2.5rem; }
     filter: grayscale(0);
 }
 
-/* --- Contact Section --- */
+
 .booking-form {
     max-width: 700px;
     margin: 0 auto;
@@ -362,7 +362,7 @@ h2 { font-size: 2.5rem; }
     font-weight: 500;
 }
 
-/* --- Footer Section --- */
+
 .footer {
     background-color: var(--surface-color);
     padding-top: 60px;
@@ -399,7 +399,7 @@ h2 { font-size: 2.5rem; }
     font-size: 0.9rem;
 }
 
-/* --- Responsive Design --- */
+
 @media (max-width: 992px) {
     h1 { font-size: 3rem; }
     h2 { font-size: 2.2rem; }
